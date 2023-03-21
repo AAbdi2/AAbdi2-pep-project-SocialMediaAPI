@@ -88,7 +88,7 @@ public class SocialMediaController {
         Message addedMessage = messageService.addMessage(message);
         
         //check to see if account id is valid
-        //Account account = accountService.getAccountById(addedMessage.getPosted_by());
+        //Account account = accountService.getAccountById(addedMessage.getPosted_by()));
         
         ctx.json(mapper.writeValueAsString(addedMessage));
         
